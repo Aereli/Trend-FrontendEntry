@@ -1,0 +1,76 @@
+.container {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 200px;
+}
+
+.dashBoard {
+  text-align: center;
+  margin: 50px;
+}
+
+.card {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--primary);
+  border: 1px dashed var(--secondary);
+  color: var(--secondary);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 0 0;
+  }
+
+  #name {
+    text-transform: uppercase;
+  }
+
+  #phone {
+    font-weight: 300;
+  }
+
+  #email {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .about {
+    margin: 3px;
+    font-style: italic;
+    opacity: 0.5;
+  }
+}
+
+.userIcons {
+  margin: 0 4px;
+}
+
+.userInfo {
+  display: flex;
+  margin: 1.5rem 1.5rem 0;
+}
+
+.subInfoContainer {
+  width: 200px;
+  height: 25px;
+  padding: 1rem;
+  overflow: scroll;
+
+  .subInfoSkills {
+    color: var(--yellow);
+  }
+
+  .subInfoTags {
+    color: var(--yellow);
+    padding: 1rem 1rem;
+  }
+}
